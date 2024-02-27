@@ -1,5 +1,5 @@
 on:
-  workflow_dispatch:
+  schedule: "*/5 * * * *"
 jobs:
   snyk_scan:
     runs-on: ubuntu-latest
