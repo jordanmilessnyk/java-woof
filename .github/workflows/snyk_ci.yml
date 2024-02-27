@@ -1,5 +1,6 @@
 on:
-  schedule: "*/5 * * * *"
+  schedule:
+    - cron: "*/5 * * * *"
 jobs:
   snyk_scan:
     runs-on: ubuntu-latest
