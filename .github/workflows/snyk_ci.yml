@@ -13,6 +13,6 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: monitor
-          args: --all-projects --all-subprojects
+          args: --all-projects
 
 
