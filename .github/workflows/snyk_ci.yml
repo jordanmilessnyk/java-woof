@@ -7,14 +7,8 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
-      -
-        name: Build with Gradle
-        run: ./gradlew build
-      -
         name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk16@master
+        uses: snyk/actions/gradle-jdk17@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
